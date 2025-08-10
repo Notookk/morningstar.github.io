@@ -1,292 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Morning Star - Full-Stack Developer Portfolio">
-    <title>Morning Star | Full-Stack Developer</title>
-    <script src="https://kit.fontawesome.com/d2ddf4c74b.js" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Morning Star – Full-Stack Developer Portfolio" />
+  <title>Morning Star | Full-Stack Developer</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/d2ddf4c74b.js" crossorigin="anonymous" defer></script>
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <a href="https://t.me/xazoc" class="logo">Morning<span>.</span>dev</a>
-        <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
-        <div id="menu-icon" aria-label="Menu">≡</div>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<body data-theme="dark">
+  <header class="glass">
+    <a href="https://t.me/xazoc" class="logo">Morning<span>.</span>dev</a>
+    <button id="theme-toggle" aria-label="Toggle dark/light mode">🌓</button>
+    <div id="menu-icon">≡</div>
+    <nav class="navbar glass">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-        <div class="particle-container"></div>
-        <div class="home-content">
-            <h1>Hi, I'm <span>Morning Star</span></h1>
-            <div class="text-animate">
-                <h3>Full-Stack Developer</h3>
-            </div>
-            <p>Highly experienced developer (3+ years) specializing in the creation of scalable web applications, engaging Telegram bots, and robust Android applications. Proficient in Python Telegram Bot (PTB), Kotlin, and C#.</p>
-            <div class="social-links">
-                <a href="https://www.instagram.com/xotik.ari" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://github.com/Notookk" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://t.me/xazoc" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
-            </div>
-            <a href="https://t.me/x_support_chat" class="btn">Let's Connect</a>
+  <main>
+    <!-- Home -->
+    <section class="home section" id="home" data-aos="fade-up">
+      <div class="particle-container"></div>
+      <div class="home-content">
+        <h1>Hi, I'm <span>Morning Star</span></h1>
+        <h3 class="text-animate">Full-Stack Developer</h3>
+        <p>3+ years of crafting scalable web apps, Telegram bots, and Android apps with PTB, Kotlin, and C#.</p>
+        <div class="btn-group">
+          <a href="https://t.me/x_support_chat" class="btn">Let's Connect</a>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+          </div>
         </div>
-        <div class="home-img">
-            <div class="glowing-circle">
-                <div class="image">
-                    <img src="assets/images/profile.jpg" alt="Morning Star, Full-Stack Developer" loading="lazy">
-                </div>
-            </div>
+      </div>
+      <div class="home-img">
+        <div class="glow-circle">
+          <img src="assets/images/profile.jpg" alt="Morning Star" loading="lazy" />
         </div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        <div class="about-content">
-            <div class="about-img">
-                <img src="assets/images/dev.png" alt="Morning working on code" loading="lazy">
+    <!-- About -->
+    <section class="about section" id="about" data-aos="fade-up">
+      <h2 class="heading glass">About Me</h2>
+      <div class="about-content glass">
+        <img src="assets/images/dev.png" alt="Working on code" loading="lazy" />
+        <div>
+          <h3>Full-Stack Developer</h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>Lead Developer @ 𝐀ʀɪ Bots</h4>
+              <span>2024–Present</span>
             </div>
-            <div class="about-text">
-                <h3>Full-Stack Developer</h3>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h4>Lead Developer at 𝐀ʀɪ 🇽 𝐁ᴏᴛs</h4>
-                        <span>2024-Present</span>
-                        <p>Led team in building useful bots and web apps with Python Telegram Bot (PTB) framework</p>
-                    </div>
-                    <div class="timeline-item">
-                        <h4>Full-Stack Developer @Daxx Team</h4>
-                        <span>2019-2022</span>
-                        <p>Developed Telegram bots using Pyrogram and PTB with advanced features</p>
-                    </div>
-                </div>
-                <a href="assets/Star.pdf" class="btn" download>Download CV</a>
+            <div class="timeline-item">
+              <h4>Full-Stack Developer @ Daxx</h4>
+              <span>2019–2022</span>
             </div>
+          </div>
+          <a href="assets/Star.pdf" class="btn">Download CV</a>
         </div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skills-box">
-                <h3>Telegram Development</h3>
-                <p>Building interactive bots with advanced features</p>
-                <div class="skills-list">
-                    <span>Python Telegram Bot</span>
-                    <span>Pyrogram</span>
-                    <span>Telethon</span>
-                    <span>AIOgram</span>
-                    <span>Bot API</span>
-                </div>
-            </div>
-
-            <div class="skills-box">
-                <h3>Android Development</h3>
-                <p>Creating native mobile applications</p>
-                <div class="skills-list">
-                    <span>Kotlin</span>
-                    <span>Jetpack Compose</span>
-                    <span>Android SDK</span>
-                    <span>Room Database</span>
-                </div>
-            </div>
-
-            <div class="skills-box">
-                <h3>Backend Development</h3>
-                <p>Building scalable server-side applications</p>
-                <div class="skills-list">
-                    <span>C#</span>
-                    <span>ASP.NET Core</span>
-                    <span>Python</span>
-                    <span>Node.js</span>
-                </div>
-            </div>
-
-            <div class="skills-box">
-                <h3>Database</h3>
-                <p>Data storage and management solutions</p>
-                <div class="skills-list">
-                    <span>PostgreSQL</span>
-                    <span>MongoDB</span>
-                    <span>Redis</span>
-                    <span>SQLite</span>
-                </div>
-            </div>
-
-            <div class="skills-box">
-                <h3>Mini Web App</h3>
-                <p>Web applications in Mini mode</p>
-                <div class="skills-list">
-                    <span>PTB</span>
-                    <span>React</span>
-                    <span>Telwind</span>
-                    <span>socket.io</span>
-                </div>
-            </div>
-
-            <div class="skills-box">
-                <h3>Discord Development</h3>
-                <p>Building advanced Discord bots using Discord.py</p>
-                <div class="skills-list">
-                    <span>Discord.py</span>
-                    <span>Discord.js</span>
-                    <span>MongoDB</span>
-                    <span>SQLite</span>
-                </div>
-            </div>
+    <!-- Skills -->
+    <section class="skills section" id="skills" data-aos="fade-up">
+      <h2 class="heading glass">My Skills</h2>
+      <div class="skills-grid">
+        <div class="skills-box glass">
+          <h3>Telegram Dev</h3>
+          <p>Interactive bots & automation</p>
+          <ul>
+            <li>Python Telegram Bot</li>
+            <li>Pyrogram</li>
+            <li>Telethon / AIOgram</li>
+          </ul>
         </div>
+        <div class="skills-box glass">
+          <h3>Android Dev</h3>
+          <p>Modern native apps</p>
+          <ul>
+            <li>Kotlin & Jetpack</li>
+            <li>Room</li>
+            <li>Android SDK</li>
+          </ul>
+        </div>
+        <div class="skills-box glass">
+          <h3>Backend</h3>
+          <p>Server-side systems</p>
+          <ul>
+            <li>C# / ASP.NET Core</li>
+            <li>Python / Node.js</li>
+          </ul>
+        </div>
+        <div class="skills-box glass">
+          <h3>Databases</h3>
+          <p>Reliable storage</p>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB / Redis</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <h2 class="heading">Recent <span>Projects</span></h2>
-        <div class="projects-container">
-            <!-- Project 1 - Telegram Bot -->
-            <div class="projects-box">
-                <img src="assets/images/guard.jpg" alt="𝐆ᴜᴀʀᴅɪᴀɴ 🇽 𝐁ᴏᴛ" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐆ᴜᴀʀᴅɪᴀɴ 🇽 𝐁ᴏᴛ</h4>
-                    <p>Advanced Telegram bot to sacn NSFW</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>PTB</span>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://t.me/GuardianX_Robot" aria-label="Try bot"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2 - Android App -->
-            <div class="projects-box">
-                <img src="assets/images/music.jpg" alt="𝐌ᴜsɪᴄ 🇽 𝐁ᴏᴛ" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐌ᴜsɪᴄ 🇽 𝐁ᴏᴛ</h4>
-                    <p>Mordern music Streaming Bot</p>
-                    <div class="tech-tags">
-                        <span>PTB</span>
-                        <span>pytgcall</span>
-                        <span>RMongo</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://t.me/Akshumusic_bot" aria-label="Try bot"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3 - Web Dashboard -->
-            <div class="projects-box">
-                <img src="assets/images/ari.jpg" alt="𝐀ʀɪ 🇽 𝐁ᴏᴛs" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐀ʀɪ 🇽 𝐁ᴏᴛs</h4>
-                    <p>All in one dashboard for Telegram bots</p>
-                    <div class="tech-tags">
-                        <span>PTB</span>
-                        <span>Broadcasting</span>
-                        <span>channel</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://t.me/Your_Support_Channel" aria-label="open channel"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 - Chat Automation -->
-            <div class="projects-box">
-                <img src="assets/images/ai.jpg" alt="𝐀ɪ-𝐂ʜᴀᴛ 🇽 𝐁ᴏᴛ" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐀ɪ-𝐂ʜᴀᴛ 🇽 𝐁ᴏᴛ</h4>
-                    <p>Ai powered chatbot for Telegram users</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>ChatGPT</span>
-                        <span>MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://t.me/shreechat_robot" aria-label="Try bot"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5 - Android Utility -->
-            <div class="projects-box">
-                <img src="assets/images/bloop.jpg" alt="𝐁ʟᴏᴏᴘ" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐁ʟᴏᴏᴘ</h4>
-                    <p>Android utility app for system optimization</p>
-                    <div class="tech-tags">
-                        <span>Kotlin</span>
-                        <span>Android SDK</span>
-                        <span>Root Access</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" aria-label="View on Play Store"><i class="fab fa-google-play"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6 - Web Scraper -->
-            <div class="projects-box">
-                <img src="assets/images/mail.jpg" alt="𝐓-ᴍᴀɪʟ 🇽 𝐁ᴏᴛ" loading="lazy">
-                <div class="projects-layer">
-                    <h4>𝐓-ᴍᴀɪʟ 🇽 𝐁ᴏᴛ</h4>
-                    <p>Telegram bot for Temp Mail Services</p>
-                    <div class="tech-tags">
-                        <span>Python</span>
-                        <span>Mail-API</span>
-                        <span>PTB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://t.me/tempmaiI_bot" aria-label="Try bot"><i class="fab fa-telegram"></i></a>
-                    </div>
-                </div>
-            </div>
+    <!-- Projects -->
+    <section class="projects section" id="projects" data-aos="fade-up">
+      <h2 class="heading glass">Recent Projects</h2>
+      <div class="projects-grid">
+        <!-- Example project -->
+        <div class="project-box glass" data-aos="zoom-in">
+          <img src="assets/images/guard.jpg" alt="Guardian Bot" loading="lazy" />
+          <div class="project-info">
+            <h4>Guardian Bot</h4>
+            <p>Telegram bot to scan NSFW content.</p>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+          </div>
         </div>
+        <!-- Repeat for other projects as needed -->
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        <form id="contact-form" action="https://formspree.io/f/xldbojnd" method="POST">
-            <div class="input-box">
-                <input type="text" name="name" placeholder="Full Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-            </div>
-            <div class="input-box">
-                <input type="tel" name="phone" placeholder="Phone Number">
-                <input type="text" name="subject" placeholder="Subject">
-            </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-        <div id="form-status"></div>
+    <!-- Contact -->
+    <section class="contact section" id="contact" data-aos="fade-up">
+      <h2 class="heading glass">Contact Me</h2>
+      <form class="contact-form glass" action="https://formspree.io/f/xldbojnd" method="POST">
+        <div class="input-row">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </section>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-text">
-            <p>&copy; <span id="year"></span> Morning Star. All Rights Reserved</p>
-        </div>
-        <div class="footer-iconTop">
-            <a href="#home" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
-        </div>
-    </footer>
+  <footer class="glass">
+    <p>&copy; <span id="year"></span> Morning Star</p>
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </footer>
 
-    <!-- Main JavaScript -->
-    <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, once: true });
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const button = document.getElementById('theme-toggle');
+    button.addEventListener('click', () => {
+      document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';
+    });
+  </script>
 </body>
 </html>
